@@ -3,8 +3,8 @@ import { render, screen } from "../../utils/test-utils";
 import Header from "./Header";
 
 describe("Header", () => {
-  it("the text is visible", () => {
+  it("renders header title text", () => {
     render(<Header />);
-    expect(screen.getByText("Header")).toBeInTheDocument();
+    expect(screen.getByText("Little Lemon Restaurant")).toBeInTheDocument();
   });
 });

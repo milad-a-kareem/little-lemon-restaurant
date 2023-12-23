@@ -3,8 +3,8 @@ import { render, screen } from "../../utils/test-utils";
 import Footer from "./Footer";
 
 describe('Footer',()=>{
-    it('the text is visible', () => {
+    it('renders copyright text', () => {
         render(<Footer />)
-        expect(screen.getByText('Footer')).toBeInTheDocument()
+        expect(screen.getByText('Copyright Little Lemon Restaurant')).toBeInTheDocument()
       })
 })
